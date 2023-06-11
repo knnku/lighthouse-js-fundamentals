@@ -1,10 +1,11 @@
 
-let num = 2;
-let solution = ''
+let num = 10;
+let solution = 0;
 
 for (var i = num - 1; i >= 1; i--) {
     // We store the value of num at each iteration
-    solution = num *= i; // or num *= i;
+    solution *= i; // or num *= i;
+    console.log(i);
     /* 
                     num      var i = num - 1       num *= i         i--       i >= 1?
     1st iteration:   5           4 = 5 - 1         20 = 5 * 4        3          yes   
