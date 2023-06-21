@@ -1,13 +1,12 @@
 
-const moves =  
+const moves = ['north', 'north', 'south', 'north']  
 
 function finalPosition(moves) {
   let yPos = 0;
   let xPos = 0;
 
-  let pos = [];
-
-  for (let moves of moves) {
+  let pos = 0;
+  for (let move of moves) {
     if (move === "north") {
       yPos + 1;
     } else if (move === "south") {
@@ -16,13 +15,16 @@ function finalPosition(moves) {
       xPos + 1;
     } else if (move === "west") {
       xPos - 1;
+    } else {
+      xPos + 0 && yPos + 0;
     }
 
     
   }
 
-  return xPos, yPos;
+  pos.push()
+  return pos;
 
 }
 
-console.log(finalPosition(['north', 'north', 'south', 'north'] ))
+console.log(finalPosition(moves))
